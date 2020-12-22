@@ -1,6 +1,6 @@
 # Picoman Theme for TCExam #
 Mobile First Design TCExam Theme built on top Pico.css (https://picocss.com)
-This theme only make changes view on Public area. The Admin theme use the default theme of TCExam. Maybe if any spare time available i will create the admin theme too.
+This theme only make changes view on Public area. For a while the Admin theme use the default theme of TCExam. Maybe if any spare time available i will create the admin theme too.
 ## Features ##
 1. Mobile First Design, Responsive, make TCExam more user friendly on small Device
 2. Bootstrap like user interface
