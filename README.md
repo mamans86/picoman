@@ -24,5 +24,8 @@ define('K_PUBLIC_THEME', 'picoman');
 6. Place `picoman.php` to `/public/config/theme/` directory
 7. Done
 
+## Screenshot #
+https://picoman-theme.blogspot.com/2020/12/picoman-mobile-first-design-tcexam.html
+
 ## Additional License ##
 Please keep my credit and link visible and reachable. thanks :) 
