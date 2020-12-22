@@ -1,6 +1,6 @@
 <script>
 /*!
- * PicoMan v1.0 (https://mamans86.blogspot.com)
+ * PicoMan v1.0 (https://picoman-theme.blogspot.com/)
  * email: mamansulaeman86@gmail.com telegram: @mamans86
  * feel free to modify but please keep link to my blog always visible and reachable, and also please don't remove this comment block
  * contact me if you want to make donation
@@ -222,8 +222,8 @@ function removeUnsure(){
 /*
 * Please don't remove or alter this credit, keep visible and reachable, contact me if you want to make donation. email: mamansulaeman86@gmail.com telegram: @mamans86 
 */
-document.querySelector("body").insertAdjacentHTML("beforeend", "<div style='padding:0 1rem 1rem 1rem;text-align:center;background:var(--contrast);color:var(--background)'><span style='font-size:0.85rem'><a style='color:var(--color-warning)' href='https://mamans86.blogspot.com' target='blank'>PicoMan Theme</a> created with love by <a style='color:var(--color-warning)' href='https://mamans86.blogspot.com' target='blank'>mamans86</a></span></div>");
-document.getElementById("scrollayer").insertAdjacentHTML("beforeend", "<div style='position:fixed;bottom:1rem;right:1rem'><span style='font-size:0.75rem'><a href='https://mamans86.blogspot.com' target='blank'>TCExam PicoMan Theme</a></span></div>");
+document.querySelector("body").insertAdjacentHTML("beforeend", "<div style='padding:0 1rem 1rem 1rem;text-align:center;background:var(--contrast);color:var(--background)'><span style='font-size:0.85rem'><a style='color:var(--color-warning)' href='https://picoman-theme.blogspot.com/' target='blank'>PicoMan Theme</a> created with love by <a style='color:var(--color-warning)' href='https://mamans86.blogspot.com' target='blank'>mamans86</a></span></div>");
+document.getElementById("scrollayer").insertAdjacentHTML("beforeend", "<div style='position:fixed;bottom:1rem;right:1rem'><span style='font-size:0.75rem'><a href='https://picoman-theme.blogspot.com/' target='blank'>TCExam PicoMan Theme</a></span></div>");
 /*
 * Please don't remove or alter this credit, keep visible and reachable, contact me if you want to make donation. email: mamansulaeman86@gmail.com telegram: @mamans86 
 */
