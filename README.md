@@ -6,7 +6,7 @@ This theme only make changes view on Public area. For a while the Admin theme us
 2. Bootstrap like user interface
 3. Password Field Toggler
 4. Font Resizer Utility on Public Test Taker
-5. Unsure Button to mark unsure question
+5. Unsure Button to mark unsure question (using HTML5 LocalStorage to store unsure question index)
 6. Maybe, it Work on any modern browser today :)
 
 ## Usage ##
