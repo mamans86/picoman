@@ -10,7 +10,7 @@ This theme only make changes view on Public area. The Admin theme use the defaul
 6. Maybe, it Work on any modern browser today :)
 
 ## Usage ##
-1. Go to /public/config/
+1. Go to /public/config/ of your TCExam installation
 2. Edit the file tce_config.php with Text Editor
 3. In K_PUBLIC_THEME change `default` to `picoman` just like this example
 ```php
