@@ -7,6 +7,7 @@ This theme only make changes view on Public area. The Admin theme use the defaul
 3. Password Field Toggler
 4. Font Resizer Utility on Public Test Taker
 5. Unsure Button to mark unsure question
+6. Maybe, it Work on any modern browser today :)
 
 ## Usage ##
 1. Go to /public/config/
@@ -22,3 +23,6 @@ define('K_PUBLIC_THEME', 'picoman');
 5. Place `picoman.css` and `picoman_rtl.css` to `/public/styles/` directory
 6. Place `picoman.php` to `/public/config/theme/` directory
 7. Done
+
+## Additional License ##
+Please keep my credit and link visible and reachable. thanks :) 
