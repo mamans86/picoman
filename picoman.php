@@ -1,6 +1,6 @@
 <script>
 /*!
- * PicoMan v1.0 (https://picoman-theme.blogspot.com)
+ * PicoMan v1.1 (https://picoman-theme.blogspot.com)
  * email: mamansulaeman86@gmail.com telegram: @mamans86
  * feel free to modify but please keep link to my blog always visible and reachable, and also please don't remove this comment block
  * contact me if you want to make donation
