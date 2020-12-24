@@ -3,11 +3,12 @@ Mobile First Design TCExam Theme built on top Pico.css (https://picocss.com)
 This theme only make changes view on Public area. For a while the Admin theme use the default theme of TCExam. Maybe if any spare time available i will create the admin theme too.
 ## Features ##
 1. Mobile First Design, Responsive, make TCExam more user friendly on small Device
-2. Bootstrap like user interface
+2. Bootstrap like user interface, but small in size, No JQuery just vanilla Javascript
 3. Password Field Toggler
 4. Font Resizer Utility on Public Test Taker
 5. Unsure Button to mark unsure question (using HTML5 LocalStorage to store unsure question index)
-6. Maybe, it Work on any modern browser today :)
+6. Dark / Light mode switcher
+7. Maybe, it Work on any modern browser today :)
 
 ## Usage ##
 1. Go to /public/config/ of your TCExam installation. Make sure you are using TCExam version 14.4.0 or higher.
