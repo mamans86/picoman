@@ -1,6 +1,6 @@
 <script>
 /*!
- * PicoMan v1.1 (https://picoman-theme.blogspot.com)
+ * PicoMan v1.1.1 (https://picoman-theme.blogspot.com)
  * email: mamansulaeman86@gmail.com telegram: @mamans86
  * feel free to modify but please keep link to my blog always visible and reachable, and also please don't remove this comment block
  * contact me if you want to make donation
@@ -159,23 +159,28 @@ function setUnsureLiBg(a){
 		document.querySelectorAll("ol.qlist li")[a].style.backgroundPosition = "center left";
 	}
 	document.querySelectorAll("ol.qlist li")[a].style.backgroundRepeat = "no-repeat";	
-	document.querySelectorAll("ol.qlist li")[a].style.backgroundSize = "contain";
+	document.querySelectorAll("ol.qlist li")[a].style.backgroundSize = "auto";
 }
+
 var qNumSpan = document.getElementById("qNum");
+var unsureBtn = document.getElementById("unsure");
+function unsureStyle(){
+	unsureBtn.setAttribute("onclick","removeUnsure()");
+	unsureBtn.style.backgroundColor = "#fff176";
+	unsureBtn.style.color = "#575757";
+	unsureBtn.style.borderColor = "#fff176";
+
+	qNumSpan.style.backgroundColor = "#fff176";
+	qNumSpan.style.color = "#575757";
+	qNumSpan.style.borderColor = "transparent";
+}			
+
 if(localStorage.getItem('unsure') && fTestForm){
 	const unsures = JSON.parse(localStorage.getItem('unsure'));
-	var unsureBtn = document.getElementById("unsure");
 	unsures.forEach(el => {
 		var currNo = document.getElementById("qNum").textContent-1;
 		if(currNo===el){
-			unsureBtn.setAttribute("onclick","removeUnsure()");
-			unsureBtn.style.backgroundColor = "#fff176";
-			unsureBtn.style.color = "#575757";
-			unsureBtn.style.borderColor = "#fff176";
-			
-			qNumSpan.style.backgroundColor = "#fff176";
-			qNumSpan.style.color = "#575757";
-			qNumSpan.style.borderColor = "transparent";
+			unsureStyle();
 		}
 	  setUnsureLiBg(el);
 	});
@@ -184,17 +189,7 @@ if(localStorage.getItem('unsure') && fTestForm){
 function addUnsure(){
 	if(fTestForm){
 		var index = document.getElementById("qNum").textContent-1;
-		var unsureBtn = document.getElementById("unsure");
-		unsureBtn.setAttribute("onclick","removeUnsure()");
-		
-		unsureBtn.style.backgroundColor = "#fff176";
-		unsureBtn.style.color = "#575757";
-		unsureBtn.style.borderColor = "#fff176";
-		
-		qNumSpan.style.backgroundColor = "#fff176";
-		qNumSpan.style.color = "#575757";
-		qNumSpan.style.borderColor = "transparent";
-		
+		unsureStyle();
 		setUnsureLiBg(index);
 		let unsure;		
 		if(localStorage.getItem('unsure') === null){
@@ -232,14 +227,21 @@ function removeUnsure(){
 	}
 }
 
-function closeToast(){
-	document.querySelector(".warning").style.display = "none";	
+function closeToast(a){
+	document.querySelector(a).style.display = "none";	
 	document.getElementById("close_button").style.display = "none";	
 }
 
-var toastWarn = document.querySelector(".warning");
-if(toastWarn){
-	toastWarn.insertAdjacentHTML("beforeend", "<span onclick='closeToast()' id='close_button'>&times;</span>");
+var toastWar = document.querySelector(".warning");
+var toastErr = document.querySelector(".error");
+var toastMsg = document.querySelector(".message");
+
+if(toastWar){var toast = ".warning"}
+if(toastErr){var toast = ".error"}
+if(toastMsg){var toast = ".message"}
+
+if(toast){
+	document.querySelector(toast).insertAdjacentHTML("beforeend", "<span onclick='closeToast(\""+toast+"\")' id='close_button'>&times;</span>");
 }
 
 var ulMenu = document.querySelector("ul.menu");
